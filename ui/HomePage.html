@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+	<link rel="stylesheet" type="text/css" href="HomePage.css">
+	<script src="HomePage.js"></script>
+	<script src="LoadPage.js"></script>
+</head>
+<body>
+	<div class = "container">
+		
+		<header id = "header">
+			<h1>TODO</h1>
+		</header>
+
+		<div class="navigationBarDiv">
+			<ul>
+				<li> <a href="#" onclick="showHomePage()" >TODO</a> </li>
+				<li> <a href="#" onclick="showUserPage()" >User</a> </li>
+				<li> <a href="#" onclick="showSettingPage()" >Setting</a> </li>
+			</ul>
+		</div>
+
+
+		<div class="mainPartDiv">
+			<label for="textInput" > <h2>List</h2> </label>
+			<input type="text" id="textInput" placeholder="Enter your task">
+			<button type="button" name="addButton" onclick="addNewElement()"> Add </button>
+			<button type="button" name="searchButton" onclick="searchElement()"> Search </button>
+			<div>
+				<table id="toDoTable">
+					<td> <h2>Task</h2>   </td>  <td>  <h2> Action </h2>   </td>
+				</table>
+			</div>
+		</div>
+
+		<!-- <div id = "userSection">
+			<p>Hi, I am Sushovan Karmakar</p>
+		</div>
+
+		<div id = "settingSection">
+			<p>Change your settings </p>
+		</div> -->
+
+
+
+		<footer id = "footer">
+			<p>Created by Sushovan</p> 
+		</footer>
+	</div>
+</body>
+</html>

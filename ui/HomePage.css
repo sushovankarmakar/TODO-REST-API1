@@ -1,0 +1,86 @@
+
+.container header {
+	font-family: sans-serif;
+	color: whitesmoke;
+	background-color: rgb(99,10,20);
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	background-color: #f2f2f2;
+	padding: 15px 15px;
+}
+
+.navigationBarDiv ul {
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+	float: left;
+	overflow: auto;
+	background-color: green;
+	position: fixed;
+	width: 10%;
+	height: 80%;
+}
+
+.navigationBarDiv ul li a {
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navigationBarDiv ul li:hover {
+	background-color: #555;
+	cursor: pointer;
+}
+
+
+.mainPartDiv {
+	display: block;
+	margin-left: 15%;
+	margin-bottom: 25%;
+	padding: 10px;
+}
+
+.mainPartDiv label {
+	text-align: justify;
+}
+
+.mainPartDiv input {
+	width: 80%;
+	padding: 13px 20px;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+	box-sizing: content-box;
+	outline: none;
+}
+
+.mainPartDiv button {
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 15px;
+	border-radius: 50%;
+	outline: none;
+}
+
+.mainPartDiv button:hover {
+	background-color: #3e8e41;
+}
+
+
+.container footer {
+	font-family: cursive;
+	text-align: center;
+}
