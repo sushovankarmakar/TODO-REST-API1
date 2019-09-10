@@ -44,6 +44,8 @@ function createTodoRow(inputValue){
 	tableRow.insertCell(0).appendChild(text);
 	tableRow.insertCell(1).appendChild(editButton);
 	tableRow.insertCell(2).appendChild(deleteButton);
+
+	addToDataList(inputValue);
 	
 	document.getElementById("toDoTable").appendChild(tableRow);
 }
@@ -133,5 +135,12 @@ function deleteElement(deleteButton){
 		toDoTable.deleteRow(rowToDelete.rowIndex);
 		toDoListArray.splice(rowToDelete.rowIndex[0]);
 	})
+}
+
+function addToDataList(item){
+	var listItem = document.getElementById("listItems");
+	var optionTag = document.createElement("option");
+	optionTag.setAttribute("value", item);
+	listItem.appendChild(optionTag);
 }
 
